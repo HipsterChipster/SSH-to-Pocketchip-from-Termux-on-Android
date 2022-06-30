@@ -1,0 +1,20 @@
+This is a way to access files such as:
+/etc/apt/sources.list
+/etc/Network manager/Network manager.conf
+/etc/X11/xorg.conf
+etc....
+
+First step is to install Fdroid @ f-droid.org
+(set necessary permissions in settings)
+Second step is download termux thru f-droid. DO NOT install from Google play store or it will be fucked off as they don't play together anymore.
+(set necessary permissions in settings)
+Third step is install git 
+pkg install git
+Fourth step is install AnLinux so as to easily install separate OS that lets you run with root permissions such as Debian, Ubuntu, Kali, etc. Here are steps for Ubuntu for example-
+pkg install wget openssl-tool proot -y && hash -r && wget https://raw.githubusercontent.com/EXALAB/AnLinux-Resources/master/Scripts/Installer/Ubuntu/ubuntu.sh && bash ubuntu.sh
+Then type ./start-ubuntu.sh and your in Ubuntu
+Fifth step is install the ssh
+wget https://raw.githubusercontent.com/EXALAB/AnLinux-Resources/master/Scripts/SSH/Apt/ssh-apt.sh && bash ssh-apt.sh
+Then type /etc/init.d/ssh start
+Then with your pocketchip on and you need to make sure the android and pocketchip are on the same wifi network. 
+Then last step is type ssh (your-pocketchip-ipaddress) and whammo your in. 
